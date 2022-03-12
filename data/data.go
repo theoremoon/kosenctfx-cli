@@ -24,7 +24,7 @@ type TaskYaml struct {
 	Attachments []Attachment
 	Host        *string
 	Port        *int
-	IsSurvey    bool `yaml:"is_survey"`
+	IsSurvey    bool `yaml:"is_survey" json:"is_survey"`
 }
 
 func Load(path string) (*TaskYaml, error) {
